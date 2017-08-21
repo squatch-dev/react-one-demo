@@ -18,4 +18,4 @@ var App = React.createClass({
     }
 });
 
-module.exports = App; //Test commit
+module.exports = App;
