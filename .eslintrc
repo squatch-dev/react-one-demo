@@ -1,0 +1,20 @@
+{
+  "root": true,
+  "parserOptions": {
+    "ecmaVersion": 7,       //Known as ES2016
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "mocha": true
+  },
+  "rules": {
+      "no-console": 1
+      /**
+      0 = Off
+      1 = Warning
+      2 = Error
+      */
+  }
+}
