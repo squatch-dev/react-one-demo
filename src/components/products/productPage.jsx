@@ -4,6 +4,9 @@ var React = require('react');
 var ProductApi = require('../../api/productApi.jsx');
 var ProductList = require('./productList.jsx');
 
+var Router = require('react-router');
+var Link = Router.Link;
+
 var ProductPage = React.createClass({
     getInitialState: function()
     {
@@ -22,6 +25,7 @@ var ProductPage = React.createClass({
         return (
             <div>
                 <h1>Products</h1>
+                <Link to="addProduct" className="btn btn-default">Add Product</Link>
                 <ProductList products={this.state.products}/>
             </div>
         );

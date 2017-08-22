@@ -1,7 +1,7 @@
 "use strict";
 
 var React = require('react');
-var Header = require('./components/common/header.jsx');
+var Header = require('./common/header.jsx');
 var RouteHandler = require('react-router').RouteHandler;
 
 var $ = require('jquery');  // Boostrap expects jquery to be in the global namespace
@@ -12,7 +12,9 @@ var App = React.createClass({
         return (
             <div>
                 <Header/>
-                <RouteHandler/>
+                <div className="container-fluid">
+                    <RouteHandler/>
+                </div>
             </div>
         );
     }
